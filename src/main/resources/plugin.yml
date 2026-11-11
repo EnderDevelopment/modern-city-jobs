@@ -1,0 +1,16 @@
+name: ModernCityJobs
+version: 1.0.0
+main: com.enderdevelopment.plugin.Main
+api-version: "1.21"
+softdepend: [Citizens]
+commands:
+  jobs:
+    description: Open the ModernCityJobs job center.
+    usage: /jobs
+  jobadmin:
+    description: Manage internal Emerald Wallet balances.
+    usage: /jobadmin <check|add|remove|set> <player> [amount]
+    permission: moderncityjobs.admin
+permissions:
+  moderncityjobs.admin:
+    default: op

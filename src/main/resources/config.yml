@@ -1,0 +1,57 @@
+settings:
+  cooldown-seconds: 5
+  action-cooldown-ticks: 10
+  bossbar-color: BLUE
+  wallet-gui-title: "Wallet • Emerald Ledger"
+messages:
+  prefix: "<green>City Jobs</green> <dark_gray>»</dark_gray> "
+  opened: "<gray>Welcome to the city job center. Choose your next shift.</gray>"
+  already-working: "<red>You already have an active shift.</red>"
+  cooldown: "<yellow>Please wait before starting another shift.</yellow>"
+  cancelled: "<red>Your shift was cancelled. No reward was issued.</red>"
+  completed: "<green>Shift complete! <white>+{reward} emeralds</white> were added to your wallet.</green>"
+  wallet: "<green>Wallet balance: <white>{balance} emeralds</white></green>"
+  admin-success: "<green>Wallet updated. New balance: <white>{balance}</white></green>"
+  admin-error: "<red>Use: /jobadmin <check|add|remove|set> <player> [amount]</red>"
+  task-progress: "<gray>Task progress: <white>{progress}/{required}</white></gray>"
+jobs:
+  waiter:
+    display: "Waiter"
+    icon: PAPER
+    color: GOLD
+    task: "Serve tables"
+  chef:
+    display: "Chef"
+    icon: COOKED_BEEF
+    color: RED
+    task: "Prepare orders"
+  barista:
+    display: "Barista"
+    icon: MILK_BUCKET
+    color: DARK_AQUA
+    task: "Brew coffee"
+  cashier:
+    display: "Cashier"
+    icon: GOLD_INGOT
+    color: YELLOW
+    task: "Process customers"
+  delivery:
+    display: "Delivery Driver"
+    icon: MINECART
+    color: AQUA
+    task: "Deliver packages"
+  construction:
+    display: "Construction Worker"
+    icon: IRON_PICKAXE
+    color: GRAY
+    task: "Build the skyline"
+durations:
+  3:
+    reward: 9
+    required-actions: 3
+  5:
+    reward: 15
+    required-actions: 5
+  8:
+    reward: 18
+    required-actions: 8
